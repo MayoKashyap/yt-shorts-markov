@@ -3,7 +3,7 @@ from datetime import datetime
 from collections import defaultdict
 from engagement import engagementBucket 
 
-df = pd.read_csv("/Users/mayurkashyap/Desktop/ytShortsMarkov/data/SyntheticShortsHistory.csv")
+df = pd.read_csv("/Users/mayurkashyap/Desktop/ytShortsMarkov/data/ShortsHistory.csv")
 times = []
 for t in df["timestamp"]:
     times += [datetime.strptime(t, "%Y-%m-%d %H:%M:%S")]
