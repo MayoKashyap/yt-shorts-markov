@@ -9,7 +9,7 @@ indexState = {}
 i = 0 
 for state in states: 
     stateIndex[state] = i 
-    i += 1 
+    i += 1 # correspond each col  with a state 
 
 markovMatrix = np.zeros((len(states), len(states)))
 for currentState in MODEL: 
@@ -17,7 +17,7 @@ for currentState in MODEL:
     for nextState in MODEL[currentState]: 
         j = stateIndex[nextState]
         prob = MODEL[currentState][nextState]
-        markovMatrix[i][j] = prob 
+        markovMatrix[i][j] = prob  # correspond each row with a state 
 
 dfMatrix = pd.DataFrame(markovMatrix, index = states, columns = states )
 print(" ---- Transition Matrix ----- ")
