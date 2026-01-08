@@ -77,6 +77,9 @@ repeatable engagement rather than complete attentional burnout.
 ## Project Structure
 - `src/train_markov.py` — builds the transition model from data
 - `src/analyze_markov.py` — analyzes long-run behavior
+- `src/engagement.py` - creates 'buckets' for engagement levels
+- `src/simulate.py` - simulates the most probable states given an intial state (intial vector)
 - `results/transition_matrix.csv` — learned transition probabilities
 - `results/steady_state_distribution.csv` — long-run attention distribution
+  
 
